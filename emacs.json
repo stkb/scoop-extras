@@ -51,5 +51,8 @@
             "bin\\runemacs.exe",
             "Emacs"
         ]
+    ],
+    "post_install": [
+        "Remove-Item \"$dir\\bin\\emacs-$version.exe\""
     ]
 }
