@@ -1,0 +1,26 @@
+{
+    "version": "3.80",
+    "license": "https://www.advancedrenamer.com/user_guide/license",
+    "homepage": "https://www.advancedrenamer.com/",
+    "url": "https://www.advancedrenamer.com/down/advanced_renamer_portable_3_80.zip",
+    "hash": "85EAA377EFB6E2B995EB149545E6F89024797FEAC26B16D9A7E86EDD0FA015F7",
+    "bin": [
+        "ARen.exe",
+        "arenc.exe"
+    ],
+    "shortcuts": [
+        [
+            "ARen.exe",
+            "Advanced Renamer"
+        ]
+    ],
+    "persist": [
+        "Data"
+    ],
+    "checkver": {
+        "re": "Advanced Renamer ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.advancedrenamer.com/down/advanced_renamer_portable_$underscoreversion.zip"
+    }
+}
