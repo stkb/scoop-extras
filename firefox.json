@@ -18,14 +18,10 @@
             "Mozilla Firefox"
         ]
     ],
-    "pre_install": "echo \"[Install]`nInstallDirectoryPath=$dir`nQuickLaunchShortcut=false`nDesktopShortcut=false`nStartMenuShortcuts=false\" | sc \"$dir\\install.ini\"",
+    "pre_install": "echo \"[Install]`nInstallDirectoryPath=$dir`nQuickLaunchShortcut=false`nDesktopShortcut=false`nStartMenuShortcuts=false`nMaintenanceService=false\" | sc \"$dir\\install.ini\"",
     "installer": {
         "file": "firefox-setup.exe",
         "args": "/INI=$dir\\install.ini"
-    },
-    "uninstaller": {
-        "file": "uninstall\\helper.exe",
-        "args": "/S"
     },
     "checkver": {
         "url": "https://www.mozilla.org/en-US/firefox/all/",
