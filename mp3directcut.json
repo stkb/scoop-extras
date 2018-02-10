@@ -1,0 +1,19 @@
+{
+    "version": "2.24",
+    "homepage": "http://mpesch3.de1.cc/mp3dc.html",
+    "url": "http://www.free-codecs.com/download_soft.php?d=80f7bf4c29132f45c85fd66ac819293b&s=151&r=&f=mp3directcut.htm#/dl.7z",
+    "hash": "md5:17ba0eda4320095a14bc9d0f2eb9500b",
+    "shortcuts": [
+        [
+            "mp3DirectCut.exe",
+            "mp3DirectCut"
+        ]
+    ],
+    "pre_install": [
+        "'' > \"$dir\\mp3DirectCut.ini\""
+    ],
+    "persist": [
+        "mp3DirectCut.ini"
+    ],
+    "checkver": "Current version</h2>\\s*([\\d.]+)"
+}
