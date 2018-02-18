@@ -1,0 +1,31 @@
+{
+    "homepage": "https://pscx.codeplex.com/",
+    "version": "3.2",
+    "license": "Ms-PL",
+    "url": "https://raw.githubusercontent.com/AnthonyMastrean/chocolateypackages/a7b3cf30a90aec53fdd7b00c2cc078502a2567a5/packages/echoargs/tools/EchoArgs.exe",
+    "hash": "ad25d39c93c05f6327c565d3c0fef35c12f173a7342d2f573bb09c9146caac1d",
+    "pre_install": [
+        "\"@echo off`n`\"%~dp0echoargs.exe`\" %*\" | out-file \"$dir/echoargs.cmd\" -encoding oem",
+        "'&\"$psscriptroot/echoargs.exe\" @args' | out-file \"$dir/echoargs.ps1\" -encoding oem"
+    ],
+    "bin": [
+        [
+            "echoargs.exe",
+            "testargs_exe",
+            "arg0",
+            "arg1"
+        ],
+        [
+            "echoargs.cmd",
+            "testargs_cmd",
+            "arg0",
+            "arg1"
+        ],
+        [
+            "echoargs.ps1",
+            "testargs_ps1",
+            "arg0",
+            "arg1"
+        ]
+    ]
+}
