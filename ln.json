@@ -1,0 +1,16 @@
+{
+    "homepage": "http://schinagl.priv.at/nt/ln/ln.html",
+    "version": "2.8.7.2",
+    "architecture": {
+        "32bit": {
+            "url": "http://www.schinagl.priv.at/nt/ln/ln.zip",
+            "hash": "8fcbd6215d13a1f40e21805b3c2b9c317a8cfa8e6824d69fd92268b0318a3754"
+        },
+        "64bit": {
+            "url": "http://www.schinagl.priv.at/nt/ln/ln64.zip",
+            "hash": "e9edecf18a4fa27c9c4d6b8512ec81bf1952370934a92a0d5981602161cabf8c"
+        }
+    },
+    "bin": "ln.exe",
+    "checkver": "Version ([\\d.]+)"
+}
