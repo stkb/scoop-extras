@@ -1,0 +1,33 @@
+{
+    "version": "release-20180218",
+    "homepage": "http://www.openra.net",
+    "license": "GPLv3",
+    "url": "https://github.com/OpenRA/OpenRA/releases/download/release-20180218/OpenRA-release-20180218.exe#/dl.7z",
+    "hash": "b37e5bee1fe932dadb798e9a67f7b7476b6f3b71f08de7c4f894d23d2182a069",
+    "pre_install": [
+        "rm -rec \"$dir\\`$PLUGINSDIR\""
+    ],
+    "persist": [
+        "Support"
+    ],
+    "shortcuts": [
+        [
+            "TiberianDawn.exe",
+            "OpenRA\\Tiberian Dawn"
+        ],
+        [
+            "RedAlert.exe",
+            "OpenRA\\Red Alert"
+        ],
+        [
+            "Dune2000.exe",
+            "OpenRA\\Dune 2000"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/OpenRA/OpenRA"
+    },
+    "autoupdate": {
+        "url": "https://github.com/OpenRA/OpenRA/releases/download/$version/OpenRA-$version.exe#/dl.7z"
+    }
+}
