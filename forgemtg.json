@@ -1,0 +1,27 @@
+{
+    "version": "1.6.7",
+    "homepage": "https://www.slightlymagic.net/wiki/Forge",
+    "license": "GPLv3",
+    "extract_dir": "",
+    "url": "https://releases.cardforge.org/forge/forge-gui-desktop/1.6.7/forge-gui-desktop-1.6.7.tar.bz2",
+    "depends": "oraclejre",
+    "hash": "e9c51cd80fc2e3dff932eed6024198cc8c2a812d33d5031a21879cefc1cf8857",
+    "pre_install": [
+        "rename-item \"$dir\\forge-gui-desktop-$version-jar-with-dependencies.jar\" \"forge-gui-desktop.jar\""
+    ],
+    "shortcuts": [
+        [
+            "forge-gui-desktop.jar",
+            "Forge",
+            "",
+            "forge.exe"
+        ]
+    ],
+    "checkver": {
+        "url": "https://git.cardforge.org/core-developers/forge/tags",
+        "re": "forge/tags/forge-[\\d.]+"
+    },
+    "autoupdate": {
+        "url": "https://releases.cardforge.org/forge/forge-gui-desktop/$version/forge-gui-desktop-$version.tar.bz2"
+    }
+}
