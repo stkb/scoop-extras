@@ -1,0 +1,25 @@
+{
+    "version": "0.2",
+    "license": "MIT",
+    "url": [
+        "https://github.com/sandreas/m4b-tool/releases/download/v0.2/m4b-tool.phar",
+        "https://github.com/sandreas/m4b-tool/releases/download/v0.2/mp4v2-windows.zip"
+    ],
+    "depends": "php",
+    "homepage": "https://github.com/sandreas/m4b-tool",
+    "hash": [
+        "e44beb28dcdefd0cb16d95ee2d3ebe4fbec07d2c6dfa4820ca00bc5ddd8af79b",
+        "b2e746ac3bdb11b5e3ac075ef574583e0b6ba275f40da8665a01713bfebb8572"
+    ],
+    "bin": [
+        [
+            "php.exe",
+            "m4b-tool",
+            "$dir\\m4b-tool.phar"
+        ],
+        "mp4art.exe",
+        "mp4chaps.exe",
+        "mp4info.exe",
+        "mp4tags.exe"
+    ]
+}
